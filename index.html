@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BatMan Movies List & View</title>
+
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"></link>
+<link rel="stylesheet" href="./node_modules/angular-ui-notification/dist/angular-ui-notification.min.css"></link>
+<link rel="stylesheet" href="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css"></link>
+<link rel="styleSheet" href="./node_modules/angular-ui-grid/ui-grid.min.css"/>
+
+<link rel="stylesheet" href="./css/style.css"></link>
+<!--Node Modules-->
+<script src="./node_modules/angular/angular.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="./node_modules/angular-ui-grid/ui-grid.min.js"></script>
+<script type='text/javascript' src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+<script src="./node_modules/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+<script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+
+<!--controllers-->
+<script src="./js/app.js"></script>
+<script src="./js/controllers/masterController.js"></script>
+<script src="./js/controllers/movieList.js"></script>
+<script src="./js/controllers/indivdualItemControllers.js"></script>
+
+<!--services-->
+<script src="./js/services/networkService.js"></script>
+<script src="./js/services/shareInfoService.js"></script>
+</head>
+
+<body data-ng-app="productlist" data-ng-controller="MasterCrtl">
+        <div class="container">
+            <div >
+                <h1 class="textalign">BatMan Movies</h1>
+            </div>
+        </div>
+    <div ui-view></div>
+</body>
+</html>
